@@ -1,0 +1,16 @@
+Tailscale has been installed! (but not configured)
+<br/>
+To configure tailscale, click Jails and then launch
+a shell into the tailscale jail.  Then configure
+tailscale normally.  As an example, to advertise 
+routes to your local network, run (using your local 
+network's CIDR): 
+<br/>
+<pre>
+tailscale up --advertise-routes=192.168.1.0/24
+</pre>
+<br/>
+Advertising routes is probably the best use case
+When running as a plugin. Because of the jail,
+tailscale will only expose the jail and not the
+rest of TrueNAS.

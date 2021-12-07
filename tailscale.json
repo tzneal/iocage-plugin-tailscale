@@ -1,0 +1,23 @@
+{
+    "name": "tailscale",
+    "release": "12.2-RELEASE",
+    "artifact": "https://github.com/tzneal/iocage-plugin-tailscale.git",
+    "pkgs": [
+        "security/tailscale"
+    ],
+    "properties": {
+        "nat": 1,
+        "allow_tun": 1
+    },
+    "packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
+    "fingerprints": {
+        "plugin-default": [
+            {
+                "function": "sha256",
+                "fingerprint": "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438"
+            }
+        ]
+    },
+    "official": false,
+    "revision": 1
+}
