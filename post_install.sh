@@ -13,5 +13,8 @@ go build
 cp tailscaled /usr/local/bin
 # <-- remove the above -->
 
+# trigger tailscale's TrueNAS detection
+touch /usr/local/bin/freenas-debug
+
 sysrc -f /etc/rc.conf tailscaled_enable="YES"
 service tailscaled start
